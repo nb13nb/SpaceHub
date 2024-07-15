@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="form-container">
+                <div class="form-toggle">
+                    <button id="login-btn" class="active">Log In</button>
+                    <button id="signup-btn">Sign Up</button>
+                </div>
+                <form id="login-form">
+                    <h2>Log In</h2>
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                    <button type="submit">Log In</button>
+                    <input type="checkbox" id="show-login-password"> Show Password
+                </form>
+                <form id="signup-form" style="display:none;">
+                    <h2>Sign Up</h2>
+                    <label for="signup-name">Name:</label>
+                    <input type="text" id="signup-name" required>
+                    <label for="signup-surname">Surname:</label>
+                    <input type="text" id="signup-surname" required>
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" required>
+                    <label for="signup-username">Username:</label>
+                    <input type="text" id="signup-username" required>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" required>
+                    <button type="submit">Sign Up</button>
+                    <input type="checkbox" id="show-signup-password"> Show Password
+                </form>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="burger-menu">☰</div>
+        <a class="logo" href="index.html"><img
+                src="https://cdn.freebiesupply.com/logos/large/2x/spacex-logo-black-and-white.png"
+                alt="SpaceX Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="launches.html">Launches</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="login" href="javascript:void(0)">Log In</a>
+    </header>
+
+    <section id="hero-slider" class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="https://i.pinimg.com/originals/f5/a9/d8/f5a9d883538a43f5c61935815804477a.png">
+            </div>
+            <div class="slide">
+                <img src="https://wallpapers.com/images/hd/1920x1080-hd-space-gq0s9dv5gwk75txg.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://images4.alphacoders.com/106/106826.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://wallpapers.com/images/hd/1920x1080-hd-space-73omyic75ep59863.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/originals/f5/a9/d8/f5a9d883538a43f5c61935815804477a.png">
+            </div>
+            <div class="slide">
+                <img src="https://wallpapers.com/images/hd/1920x1080-hd-space-gq0s9dv5gwk75txg.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://images4.alphacoders.com/106/106826.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://wallpapers.com/images/hd/1920x1080-hd-space-73omyic75ep59863.jpg">
+            </div>
+
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </section>
+    <main>
+
+        <span class="section-title">Check Weather for Your Skywatching</span>
+        <section id="weather-search">
+            <form id="weather-form">
+                <input type="text" id="location" placeholder="Enter your location" required>
+                <button type="submit">Search Weather</button>
+            </form>
+            <div id="default-weather">
+                <h3>Current Weather in Major Cities</h3>
+                <div id="city-weather" class="city-weather-grid">
+                </div>
+            </div>
+            <span id="showingWeather"></span>
+            <div id="weather-result" style="display: none;"></div>
+            <div id="forecast-result" style="display: none;"></div>
+        </section>
+
+        <span class="section-title">New Launches</span>
+        <section id="news-grid" class="news-grid">
+
+        </section>
+        <div class="view-more-container">
+            <a href="./launches.html">See All</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Space Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/launches.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

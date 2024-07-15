@@ -1,0 +1,44 @@
+#launch-details {
+    background: rgba(0, 0, 0, 0.7); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #ffffff;
+}
+
+#launch-details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+#launch-details img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#launch-details p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+#launch-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#launch-details li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#launch-details li span {
+    font-weight: bold;
+}

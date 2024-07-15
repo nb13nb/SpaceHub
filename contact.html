@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="form-container">
+                <div class="form-toggle">
+                    <button id="login-btn" class="active">Log In</button>
+                    <button id="signup-btn">Sign Up</button>
+                </div>
+                <form id="login-form">
+                    <h2>Log In</h2>
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                    <button type="submit">Log In</button>
+                    <input type="checkbox" id="show-login-password"> Show Password
+                </form>
+                <form id="signup-form" style="display:none;">
+                    <h2>Sign Up</h2>
+                    <label for="signup-name">Name:</label>
+                    <input type="text" id="signup-name" required>
+                    <label for="signup-surname">Surname:</label>
+                    <input type="text" id="signup-surname" required>
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" required>
+                    <label for="signup-username">Username:</label>
+                    <input type="text" id="signup-username" required>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" required>
+                    <button type="submit">Sign Up</button>
+                    <input type="checkbox" id="show-signup-password"> Show Password
+                </form>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="burger-menu">☰</div>
+
+        <a class="logo" href="index.html"><img
+                src="https://cdn.freebiesupply.com/logos/large/2x/spacex-logo-black-and-white.png"> </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="launches.html">Launches</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav> <a class="login" href="javascript:void(0)">Log In</a>
+    </header>
+
+    <section>
+        <div class="innerwrap">
+            <div class="section section-header">
+                <div class="contact-title">
+                    <span class="shtext">Contact Us</span>
+                    <span class="separator"></span>
+                    <h3>Leave a Message</h3>
+                </div>
+            </div>
+
+            <div class="section section-content">
+                <div class="map-container">
+                    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+                    <div class="map-wrapper" style="overflow:hidden;height:550px;width:100%;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54244016.1433592!2d163.6251004!3d33.92075250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b5dee46db32d%3A0x5589bf4232c10232!2sSpaceX!5e0!3m2!1sen!2sge!4v1721050608388!5m2!1sen!2sge"
+                            width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div id="gmap_canvas" style="height:100%;width:100%;"></div>
+                        <div><small><a href="http://embedgooglemaps.com"> </a></small></div>
+                        <div><small><a href="http://freedirectorysubmissionsites.com/"></a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p>California, USA</p>
+                        <p><span class="label">Phone:</span> +123 45 67 89</p>
+                        <p><span class="label">Mail:</span> spaceHub@gmail.com</p>
+                    </div>
+                    <div class="contact-form">
+                        <h3 class="form-title">Want to know more about spaceHub? <br> Leave a message</h3>
+                        <form method="post" id="form">
+                            <div class="form-group">
+                                <input id="firstname" name="firstname" type="text" placeholder="Name">
+                                <input id="lastname" name="lastname" type="text" placeholder="Lastname">
+                            </div>
+                            <div class="form-group">
+                                <input id="email" name="email" type="email" placeholder="Email">
+                                <input id="number" name="contactNumber" type="text" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" cols="30" rows="7"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
